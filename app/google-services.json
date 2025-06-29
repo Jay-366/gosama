@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978770533525",
+    "project_id": "gosama-bd9eb",
+    "storage_bucket": "gosama-bd9eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978770533525:android:76d6e8c3d8eec0c41e8f9c",
+        "android_client_info": {
+          "package_name": "com.example.gosama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978770533525-p51iidkat8qa4udqk9u9qb1sl4j7ap19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmyoqNcnBHqgc6A4oIuw4C1s3s_9is0Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978770533525-p51iidkat8qa4udqk9u9qb1sl4j7ap19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
