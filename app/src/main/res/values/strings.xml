@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">gosama</string>
+    <!-- Replace with your actual Google Maps API key -->
+    <string name="maps_api_key">AIzaSyATN1ZBHqQuJfzKjTG3WvvEZV36jgv5KoQ</string>
 </resources>
