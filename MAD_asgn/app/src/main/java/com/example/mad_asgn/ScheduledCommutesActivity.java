@@ -1,5 +1,7 @@
 package com.example.mad_asgn;
 
+import static com.example.mad_asgn.R.layout.*;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
