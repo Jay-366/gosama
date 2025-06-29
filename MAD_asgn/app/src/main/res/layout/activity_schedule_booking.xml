@@ -9,13 +9,13 @@
     tools:context=".ScheduleBookingActivity">
 
     <!-- Header -->
-    <TextView
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Schedule"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Schedule a Ride"
+        app:titleTextColor="@android:color/white" />
 
     <!-- Days Selection -->
     <TextView

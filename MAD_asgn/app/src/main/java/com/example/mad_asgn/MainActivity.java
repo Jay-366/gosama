@@ -33,5 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Set up button to navigate to Live Tracking
+        Button btnLiveTracking = findViewById(R.id.btnLiveTracking);
+        btnLiveTracking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LiveTrackingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
