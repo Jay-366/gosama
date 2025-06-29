@@ -41,7 +41,8 @@ public class HomeActivity extends AppCompatActivity {
 
         // Set up click listeners
         findRideCard.setOnClickListener(v -> {
-            // TODO: Implement find ride functionality
+            Intent intent = new Intent(HomeActivity.this, FindRideActivity.class);
+            startActivity(intent);
         });
 
         offerRideCard.setOnClickListener(v -> {
