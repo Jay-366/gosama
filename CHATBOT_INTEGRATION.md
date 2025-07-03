@@ -7,7 +7,7 @@ This document explains how the AI chatbot has been integrated into the GoSama An
 The chatbot integration consists of:
 
 ### Backend (Node.js/Express)
-- **Location**: `ai-chatbot-backend/`
+- **Location**: `app/ai-backend/`
 - **API Endpoints**: `/chat`, `/ride-assistance`, `/health`, `/models`
 - **AI Provider**: OpenRouter API with GPT-3.5-turbo
 
@@ -107,14 +107,18 @@ General support chat:
 ## 🔧 Configuration
 
 ### Backend Setup
-1. Set environment variable:
+1. Navigate to the backend directory:
    ```bash
-   export OPENROUTER_API_KEY="your-api-key-here"
+   cd app/ai-backend
    ```
 
-2. Start server:
+2. Ensure .env file exists with your API key:
+   ```
+   OPENROUTER_API_KEY=your-api-key-here
+   ```
+
+3. Start server:
    ```bash
-   cd ai-chatbot-backend
    npm start
    ```
 
@@ -194,7 +198,7 @@ General support chat:
 ### Testing
 ```bash
 # Test backend
-cd ai-chatbot-backend
+cd app/ai-backend
 npm test
 
 # Test individual endpoints
