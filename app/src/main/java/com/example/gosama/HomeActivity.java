@@ -27,6 +27,8 @@ public class HomeActivity extends AppCompatActivity {
         MaterialCardView offerRideCard = findViewById(R.id.offerRideCard);
         MaterialCardView sendParcelCard = findViewById(R.id.sendParcelCard);
         MaterialCardView scheduleCard = findViewById(R.id.scheduleCard);
+        MaterialCardView chatbotCard = findViewById(R.id.chatbotCard);
+        MaterialCardView supportChatCard = findViewById(R.id.supportChatCard);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
 
         // Observe user data
@@ -55,6 +57,16 @@ public class HomeActivity extends AppCompatActivity {
 
         scheduleCard.setOnClickListener(v -> {
             // TODO: Implement schedule functionality
+        });
+
+        chatbotCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, AssistantChatActivity.class);
+            startActivity(intent);
+        });
+
+        supportChatCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+            startActivity(intent);
         });
 
         // Set up bottom navigation

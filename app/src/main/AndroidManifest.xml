@@ -16,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gosama"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
         <!-- 🔑 Google Maps API Key (loaded from strings.xml or google_maps_api.xml) -->
@@ -35,6 +36,9 @@
         <activity android:name=".RegisterActivity" android:exported="false" />
         <activity android:name=".HomeActivity" android:exported="false" />
         <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".AssistantChatActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".FindRideActivity" android:exported="false" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

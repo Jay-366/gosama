@@ -41,13 +41,21 @@ public class AssistantChatActivity extends AppCompatActivity {
         
         // Initialize UserViewModel
         userViewModel = new UserViewModel();
+        
+        // Observe user data and get current user ID
+        userViewModel.getCurrentUser().observe(this, user -> {
+            if (user != null) {
+                currentUserId = user.getDisplayName();
+            } else {
+                currentUserId = "anonymous";
+            }
+        });
+        
+        // Load user data
         userViewModel.loadUserData();
         
-        // Get current user ID
-        currentUserId = userViewModel.getCurrentUserDisplayName();
-        if (currentUserId == null || currentUserId.isEmpty()) {
-            currentUserId = "anonymous";
-        }
+        // Set default user ID initially
+        currentUserId = "anonymous";
         
         // Initialize API service
         apiService = RetrofitClient.getInstance().getApi();
