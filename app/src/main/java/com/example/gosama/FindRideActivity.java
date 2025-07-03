@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -146,7 +147,7 @@ public class FindRideActivity extends AppCompatActivity implements OnMapReadyCal
                             // TODO: Implement actual search functionality
                         });
                     } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        Log.e("FindRideActivity", "Interrupted while searching for rides", e);
                     }
                 });
             }
@@ -224,22 +225,22 @@ public class FindRideActivity extends AppCompatActivity implements OnMapReadyCal
     private boolean validateInputs() {
         boolean isValid = true;
 
-        if (pickupLocationInput.getText().toString().trim().isEmpty()) {
+        if (pickupLocationInput.getText() == null || pickupLocationInput.getText().toString().trim().isEmpty()) {
             pickupLocationInput.setError("Please enter pickup location");
             isValid = false;
         }
 
-        if (dropOffLocationInput.getText().toString().trim().isEmpty()) {
+        if (dropOffLocationInput.getText() == null || dropOffLocationInput.getText().toString().trim().isEmpty()) {
             dropOffLocationInput.setError("Please enter drop-off location");
             isValid = false;
         }
 
-        if (dateInput.getText().toString().trim().isEmpty()) {
+        if (dateInput.getText() == null || dateInput.getText().toString().trim().isEmpty()) {
             dateInput.setError("Please select a date");
             isValid = false;
         }
 
-        if (timeInput.getText().toString().trim().isEmpty()) {
+        if (timeInput.getText() == null || timeInput.getText().toString().trim().isEmpty()) {
             timeInput.setError("Please select a time");
             isValid = false;
         }

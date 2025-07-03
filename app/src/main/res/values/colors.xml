@@ -7,4 +7,17 @@
     <color name="text_secondary">#666666</color>
     <color name="background">#FFFFFF</color>
     <color name="colorPrimary">#4CAF50</color>
+    <color name="primary_blue">#2196F3</color>
+    
+    <!-- Chat Interface Colors - Minimalist Black & White -->
+    <color name="chat_background">#FFFFFF</color>
+    <color name="chat_text_primary">#000000</color>
+    <color name="chat_text_secondary">#666666</color>
+    <color name="chat_border">#E0E0E0</color>
+    <color name="chat_user_bubble">#000000</color>
+    <color name="chat_assistant_bubble">#F5F5F5</color>
+    <color name="chat_input_background">#FFFFFF</color>
+    <color name="chat_input_border">#E0E0E0</color>
+    <color name="chat_button_background">#000000</color>
+    <color name="chat_button_text">#FFFFFF</color>
 </resources>
