@@ -1,6 +1,10 @@
 package com.example.gosama;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -74,12 +78,30 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
 
+        Log.d(TAG, "Starting registration for email: " + email);
+        
+        // Show progress indicator
+        findViewById(R.id.progressBar).setVisibility(android.view.View.VISIBLE);
+        
+        // Check network connectivity first
+        if (!isNetworkAvailable()) {
+            findViewById(R.id.progressBar).setVisibility(android.view.View.GONE);
+            showNetworkErrorDialog();
+            return;
+        }
+        
         // Create user with email and password
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
+                    // Hide progress indicator
+                    findViewById(R.id.progressBar).setVisibility(android.view.View.GONE);
+                    
                     if (task.isSuccessful()) {
+                        Log.d(TAG, "Authentication successful");
                         FirebaseUser firebaseUser = mAuth.getCurrentUser();
                         if (firebaseUser != null) {
+                            Log.d(TAG, "Firebase user created with UID: " + firebaseUser.getUid());
+                            
                             // Create user document in Firestore
                             User user = new User(
                                     firebaseUser.getUid(),
@@ -87,27 +109,72 @@ public class RegisterActivity extends AppCompatActivity {
                                     email,
                                     0 // initial ride count
                             );
+                            
+                            Log.d(TAG, "Attempting to save user to Firestore: " + user.getUsername());
 
                             db.collection("users").document(firebaseUser.getUid())
                                     .set(user)
                                     .addOnSuccessListener(aVoid -> {
-                                        Log.d(TAG, "User document created");
+                                        Log.d(TAG, "User document successfully created in Firestore");
                                         Toast.makeText(RegisterActivity.this,
                                                 "Registration successful", Toast.LENGTH_SHORT).show();
                                         finish(); // Return to login screen
                                     })
                                     .addOnFailureListener(e -> {
-                                        Log.w(TAG, "Error creating user document", e);
+                                        Log.e(TAG, "Error creating user document in Firestore", e);
                                         Toast.makeText(RegisterActivity.this,
-                                                "Error creating user profile", Toast.LENGTH_SHORT).show();
+                                                "Error creating user profile: " + e.getMessage(), Toast.LENGTH_LONG).show();
                                     });
+                        } else {
+                            Log.e(TAG, "Firebase user is null after successful authentication");
+                            Toast.makeText(RegisterActivity.this, "Error: Could not get user details", Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                        Toast.makeText(RegisterActivity.this,
-                                "Registration failed: " + task.getException().getMessage(),
-                                Toast.LENGTH_SHORT).show();
+                        Log.e(TAG, "Authentication failed", task.getException());
+                        
+                        // Handle specific error types
+                        if (task.getException() instanceof com.google.firebase.FirebaseNetworkException) {
+                            showNetworkErrorDialog();
+                        } else {
+                            Toast.makeText(RegisterActivity.this,
+                                    "Registration failed: " + task.getException().getMessage(),
+                                    Toast.LENGTH_LONG).show();
+                        }
                     }
                 });
+    }
+    
+    private void showNetworkErrorDialog() {
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
+        builder.setTitle("Network Error");
+        builder.setMessage("Unable to connect to Firebase. Please check your internet connection and try again. If you're on WiFi, try switching to mobile data.");
+        builder.setPositiveButton("Retry", (dialog, which) -> {
+            dialog.dismiss();
+            registerUser();
+        });
+        builder.setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss());
+        builder.setCancelable(false);
+        builder.show();
+    }
+    
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager == null) {
+            return false;
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            NetworkCapabilities capabilities = connectivityManager.getNetworkCapabilities(connectivityManager.getActiveNetwork());
+            if (capabilities == null) {
+                return false;
+            }
+            return capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
+                   capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
+                   capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET);
+        } else {
+            // For older devices
+            return connectivityManager.getActiveNetworkInfo() != null && 
+                   connectivityManager.getActiveNetworkInfo().isConnected();
+        }
     }
 }
