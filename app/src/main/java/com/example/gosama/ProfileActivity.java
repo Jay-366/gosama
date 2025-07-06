@@ -1,5 +1,6 @@
 package com.example.gosama;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -41,7 +42,7 @@ public class ProfileActivity extends AppCompatActivity {
                 finish(); // Go back to HomeActivity
                 return true;
             } else if (itemId == R.id.nav_rewards) {
-                // TODO: Navigate to rewards
+                startActivity(new Intent(ProfileActivity.this, RewardsActivity.class));
                 return true;
             } else if (itemId == R.id.nav_notifications) {
                 // TODO: Navigate to notifications

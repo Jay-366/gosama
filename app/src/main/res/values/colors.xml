@@ -8,6 +8,14 @@
     <color name="background">#FFFFFF</color>
     <color name="colorPrimary">#4CAF50</color>
     <color name="primary_blue">#2196F3</color>
+    <color name="gray">#888888</color>
+    <color name="main_text">#111111</color>
+    <color name="secondary_text">#757575</color>
+    <color name="card_bg">#f2f2f2</color>
+    <color name="progress_bg">#E0E0E0</color>
+    <color name="progress_fill">#333333</color>
+    <color name="progress_fill_alt">#4CAF50</color>
+    <color name="stats_card_bg">#F5F5F5</color>
     
     <!-- Chat Interface Colors - Minimalist Black & White -->
     <color name="chat_background">#FFFFFF</color>
@@ -20,4 +28,7 @@
     <color name="chat_input_border">#E0E0E0</color>
     <color name="chat_button_background">#000000</color>
     <color name="chat_button_text">#FFFFFF</color>
+    <color name="section_bg">#FFFFFF</color>
+    <color name="ad_card_bg">#F5F5F5</color>
+    <color name="divider">#E0E0E0</color>
 </resources>

@@ -2,4 +2,16 @@
     <string name="app_name">gosama</string>
     <!-- Replace with your actual Google Maps API key -->
     <string name="maps_api_key">AIzaSyATN1ZBHqQuJfzKjTG3WvvEZV36jgv5KoQ</string>
+    <string name="back">Back</string>
+    <string name="my_stats">My Stats</string>
+    <string name="km_shared">KM Shared</string>
+    <string name="co2_saved">CO2 Saved</string>
+    <string name="rides_over_time">Rides Over Time</string>
+    <string name="last_6_months">Last 6 Months</string>
+    <string name="points">Points</string>
+    <string name="current_points">Current Points</string>
+    <string name="next_stage">Next Stage: 1000</string>
+    <string name="rewards">Rewards</string>
+    <string name="reward_image">Reward image</string>
+    <string name="view_details">View Details</string>
 </resources>

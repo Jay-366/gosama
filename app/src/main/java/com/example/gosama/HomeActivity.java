@@ -2,36 +2,97 @@ package com.example.gosama;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import com.example.gosama.viewmodel.UserViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.card.MaterialCardView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
+    private UserViewModel userViewModel;
+    private TextView welcomeText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        BottomNavigationView bottomNav = findViewById(R.id.bottomNav);
-        bottomNav.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id  .menu_home:
-                    // Already on Home, do nothing
-                    return true;
-                case R.id.menu_rewards:
-                    startActivity(new Intent(HomeActivity.this, RewardsActivity.class));
-                    return true;
-                case R.id.menu_notifications:
-                    // TODO: Implement NotificationsActivity
-                    // startActivity(new Intent(HomeActivity.this, NotificationsActivity.class));
-                    return true;
-                case R.id.menu_profile:
-                    startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
-                    return true;
+        // Initialize ViewModel
+        userViewModel = new ViewModelProvider(this).get(UserViewModel.class);
+
+        // Initialize views
+        welcomeText = findViewById(R.id.welcomeText);
+        MaterialCardView findRideCard = findViewById(R.id.findRideCard);
+        MaterialCardView offerRideCard = findViewById(R.id.offerRideCard);
+        MaterialCardView sendParcelCard = findViewById(R.id.sendParcelCard);
+        MaterialCardView scheduleCard = findViewById(R.id.scheduleCard);
+        MaterialCardView chatbotCard = findViewById(R.id.chatbotCard);
+        MaterialCardView supportChatCard = findViewById(R.id.supportChatCard);
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
+
+        // Observe user data
+        userViewModel.getCurrentUser().observe(this, user -> {
+            if (user != null) {
+                welcomeText.setText("Welcome back, " + user.getDisplayName());
+            }
+        });
+
+        // Load user data
+        userViewModel.loadUserData();
+
+        // Set up click listeners
+        findRideCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, FindRideActivity.class);
+            startActivity(intent);
+        });
+
+        offerRideCard.setOnClickListener(v -> {
+            // TODO: Implement offer ride functionality
+        });
+
+        sendParcelCard.setOnClickListener(v -> {
+            // TODO: Implement send parcel functionality
+        });
+
+        scheduleCard.setOnClickListener(v -> {
+            // TODO: Implement schedule functionality
+        });
+
+        chatbotCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, AssistantChatActivity.class);
+            startActivity(intent);
+        });
+
+        supportChatCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+            startActivity(intent);
+        });
+
+        // Set up bottom navigation
+        bottomNav.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.nav_rewards) {
+                startActivity(new Intent(HomeActivity.this, RewardsActivity.class));
+                return true;
+            } else if (itemId == R.id.nav_notifications) {
+                // TODO: Navigate to notifications
+                return true;
+            } else if (itemId == R.id.nav_profile) {
+                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                return true;
+            } else if (itemId == R.id.nav_home) {
+                return true; // Already on home
             }
             return false;
         });
-        // Optionally, set the selected item to Home
-        bottomNav.setSelectedItemId(R.id.menu_home);
+
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            // Handle not logged in (redirect to login or show error)
+            finish();
+            return;
+        }
+        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 }

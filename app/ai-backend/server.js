@@ -49,7 +49,7 @@ app.get('/user/:uid/parcels', async (req, res) => {
 // Chat endpoint (handles general questions, user data, and parcel data)
 app.post('/chat', async (req, res) => {
   const { message, userId, history } = req.body;
-
+  
   if (!userId) {
     return res.json({ reply: "Sorry, I couldn't identify your user. Please log in again.", success: false });
   }
@@ -110,7 +110,7 @@ Assistant: You have 1 parcel. Details: Description: Books, Status: pending, Pick
       ...(Array.isArray(history) ? history : []), // previous conversation turns
       { role: "user", content: message }
     ];
-
+    
     const aiRes = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
@@ -124,7 +124,7 @@ Assistant: You have 1 parcel. Details: Description: Books, Status: pending, Pick
         }
       }
     );
-
+    
     const aiReply = aiRes.data.choices[0].message.content;
     console.log('AI raw reply:', aiReply);
 
