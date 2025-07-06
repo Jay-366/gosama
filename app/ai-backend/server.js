@@ -119,7 +119,7 @@ Assistant: You have 1 parcel. Details: Description: Books, Status: pending, Pick
       },
       {
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer ' + process.env.OPENROUTER_API_KEY,
           'Content-Type': 'application/json'
         }
       }
