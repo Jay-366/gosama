@@ -1,7 +1,7 @@
 package com.example.gosama;
 
 public class User {
-    private String userId;
+    private String uid; // <-- match Firestore field
     private String displayName;
     private String email;
     private int rideCount;
@@ -10,19 +10,13 @@ public class User {
     public User() {}
 
     public User(String userId, String displayName, String email, int rideCount) {
-        this.userId = userId;
+        this.uid = userId; // Changed from this.userId to this.uid
         this.displayName = displayName;
         this.email = email;
-        this.rideCount = rideCount;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+    public String getUid() { return uid; } // Added getUid()
+    public void setUid(String uid) { this.uid = uid; } // Added setUid()
 
     public String getDisplayName() {
         return displayName;
@@ -42,9 +36,5 @@ public class User {
 
     public int getRideCount() {
         return rideCount;
-    }
-
-    public void setRideCount(int rideCount) {
-        this.rideCount = rideCount;
     }
 }

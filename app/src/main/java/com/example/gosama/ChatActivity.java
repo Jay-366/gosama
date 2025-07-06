@@ -44,9 +44,9 @@ public class ChatActivity extends AppCompatActivity {
         // Observe user data and get current user ID
         userViewModel.getCurrentUser().observe(this, user -> {
             if (user != null) {
-                currentUserId = user.getDisplayName();
+                currentUserId = user.getUid(); // <-- This is CORRECT
             } else {
-                currentUserId = "anonymous";
+                currentUserId = null; // or handle as not logged in
             }
         });
         

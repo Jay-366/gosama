@@ -103,17 +103,41 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnLogin.setOnClickListener(v -> {
-            String email = emailInput.getText().toString();
+            String emailInputValue = emailInput.getText().toString();
             String password = passwordInput.getText().toString();
 
-            if (!email.isEmpty() && !password.isEmpty()) {
-                mAuth.signInWithEmailAndPassword(email, password)
+            if (!emailInputValue.isEmpty() && !password.isEmpty()) {
+                mAuth.signInWithEmailAndPassword(emailInputValue, password)
                         .addOnCompleteListener(this, task -> {
                             if (task.isSuccessful()) {
-                                // Login successful, navigate to HomeActivity
+                                FirebaseUser firebaseUser = mAuth.getCurrentUser();
+                                if (firebaseUser != null) {
+                                    String uid = firebaseUser.getUid();
+                                    String userEmail = firebaseUser.getEmail(); // <-- Renamed to userEmail
+                                    String displayName = firebaseUser.getDisplayName() != null ? firebaseUser.getDisplayName() : "";
+
+                                    User user = new User(uid, displayName, userEmail, 0);
+
+                                    db.collection("users").document(uid)
+                                        .get()
+                                        .addOnSuccessListener(documentSnapshot -> {
+                                            if (!documentSnapshot.exists()) {
+                                                // Create user document if it doesn't exist
+                                                db.collection("users").document(uid)
+                                                    .set(user)
+                                                    .addOnSuccessListener(aVoid -> {
+                                                        Log.d(TAG, "User document created");
+                                                    })
+                                                    .addOnFailureListener(e -> {
+                                                        Log.w(TAG, "Error creating user document", e);
+                                                    });
+                                            }
+                                        });
+                                }
+                                // Then navigate to HomeActivity
                                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                                 startActivity(intent);
-                                finish(); // Close login activity
+                                finish();
                             } else {
                                 Toast.makeText(MainActivity.this, 
                                     "Authentication failed", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Eco Stats Title -->
+    <TextView
+        android:id="@+id/tvEcoStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eco Stats"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Eco Stats Cards -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:id="@+id/ecoStatsContainer"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- Cards will be added dynamically -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Points to next reward -->
+    <TextView
+        android:id="@+id/tvPointsToNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points to next reward"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPointsProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="320 / 500"
+        android:layout_marginBottom="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarPoints"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:progress="64"
+        android:max="100"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Rewards List Title -->
+    <TextView
+        android:id="@+id/tvRewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rewards"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Rewards RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRewards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Redeem Button -->
+    <Button
+        android:id="@+id/btnRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redeem"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout> 

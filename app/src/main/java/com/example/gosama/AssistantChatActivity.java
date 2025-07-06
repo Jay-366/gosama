@@ -45,9 +45,9 @@ public class AssistantChatActivity extends AppCompatActivity {
         // Observe user data and get current user ID
         userViewModel.getCurrentUser().observe(this, user -> {
             if (user != null) {
-                currentUserId = user.getDisplayName();
+                currentUserId = user.getUid(); // CORRECT: uses UID
             } else {
-                currentUserId = "anonymous";
+                currentUserId = null;
             }
         });
         
