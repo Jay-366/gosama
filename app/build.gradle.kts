@@ -49,7 +49,19 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:20.6.0")
     implementation("com.google.android.gms:play-services-maps:18.1.0")
     implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.libraries.places:places:3.4.0") // For Places SDK
+    implementation("com.google.maps:google-maps-services:2.2.0") // For Directions API
     
+    implementation("com.google.firebase:firebase-database:20.3.0")
+
+    // Google Maps dependency
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+
+    // Retrofit for network communication
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

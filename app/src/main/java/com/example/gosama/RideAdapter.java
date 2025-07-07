@@ -73,12 +73,12 @@ public class RideAdapter extends RecyclerView.Adapter<RideAdapter.RideViewHolder
 
         public RideViewHolder(@NonNull View itemView) {
             super(itemView);
-            profileIcon = itemView.findViewById(R.id.profileIcon);
+            profileIcon = itemView.findViewById(R.id.driverImage); // was profileIcon
             driverName = itemView.findViewById(R.id.driverName);
-            rideRoute = itemView.findViewById(R.id.rideRoute);
-            rideTime = itemView.findViewById(R.id.rideTime);
-            rideDetails = itemView.findViewById(R.id.rideDetails);
-            joinRideButton = itemView.findViewById(R.id.joinRideButton);
+            rideRoute = itemView.findViewById(R.id.startLocation); // was rideRoute
+            rideTime = itemView.findViewById(R.id.dateTime); // was rideTime
+            rideDetails = itemView.findViewById(R.id.price); // was rideDetails
+            joinRideButton = itemView.findViewById(R.id.statusButton); // was joinRideButton
         }
     }
 }
