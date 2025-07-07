@@ -32,196 +32,34 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Pickup Location -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pickup"
-                android:textSize="16sp"
+                android:text="Available Rides"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="16dp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ridesRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:layout_height="wrap_content" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/pickupLocationInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter pickup location"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Drop-off Location -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drop-off"
-                android:textSize="16sp"
+                android:text="Available Parcels Delivery"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/parcelsRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/dropOffLocationInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter drop-off location"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Seats -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Seats"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
-
-            <RadioGroup
-                android:id="@+id/seatsRadioGroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-
-                <RadioButton
-                    android:id="@+id/seat1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_selector"
-                    android:button="@null"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="1 seat"
-                    android:textColor="@color/radio_text_color" />
-
-                <RadioButton
-                    android:id="@+id/seat2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_selector"
-                    android:button="@null"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="2 seats"
-                    android:textColor="@color/radio_text_color" />
-
-                <RadioButton
-                    android:id="@+id/seat3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_selector"
-                    android:button="@null"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="3 seats"
-                    android:textColor="@color/radio_text_color" />
-
-                <RadioButton
-                    android:id="@+id/seat4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_selector"
-                    android:button="@null"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="4 seats"
-                    android:textColor="@color/radio_text_color" />
-
-                <RadioButton
-                    android:id="@+id/seat5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/radio_selector"
-                    android:button="@null"
-                    android:gravity="center"
-                    android:padding="8dp"
-                    android:text="5 seats"
-                    android:textColor="@color/radio_text_color" />
-            </RadioGroup>
-
-            <!-- Date -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/dateInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Select date"
-                    android:inputType="none"
-                    android:focusable="false"
-                    android:clickable="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Time -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Time"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/timeInput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Select time"
-                    android:inputType="none"
-                    android:focusable="false"
-                    android:clickable="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Map -->
-            <fragment
-                android:id="@+id/map"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginBottom="16dp" />
-
-            <!-- Find Ride Button -->
-            <Button
-                android:id="@+id/findRideButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Find Ride"
-                android:padding="12dp"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

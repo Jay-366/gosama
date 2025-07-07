@@ -56,7 +56,7 @@ public class ProfileActivity extends AppCompatActivity {
         // Observe user data
         userViewModel.getCurrentUser().observe(this, user -> {
             if (user != null) {
-                tvUserName.setText(user.getDisplayName());
+                tvUserName.setText(user.getUsername());
                 tvUserStatus.setText("Verified User & Driver");
             }
         });

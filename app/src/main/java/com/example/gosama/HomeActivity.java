@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         // Observe user data
         userViewModel.getCurrentUser().observe(this, user -> {
             if (user != null) {
-                welcomeText.setText("Welcome back, " + user.getDisplayName());
+                welcomeText.setText("Welcome back, " + user.getUsername());
             }
         });
 
@@ -49,15 +49,18 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         offerRideCard.setOnClickListener(v -> {
-            // TODO: Implement offer ride functionality
+            Intent intent = new Intent(HomeActivity.this, OfferRideActivity.class);
+            startActivity(intent);
         });
 
         sendParcelCard.setOnClickListener(v -> {
-            // TODO: Implement send parcel functionality
+            Intent intent = new Intent(HomeActivity.this, ParcelDeliveryActivity.class);
+            startActivity(intent);
         });
 
         scheduleCard.setOnClickListener(v -> {
-            // TODO: Implement schedule functionality
+            Intent intent = new Intent(HomeActivity.this, MyScheduleActivity.class);
+            startActivity(intent);
         });
 
         chatbotCard.setOnClickListener(v -> {
