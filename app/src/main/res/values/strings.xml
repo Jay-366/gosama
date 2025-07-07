@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">gosama</string>
     <!-- Replace with your actual Google Maps API key -->
@@ -14,4 +15,16 @@
     <string name="rewards">Rewards</string>
     <string name="reward_image">Reward image</string>
     <string name="view_details">View Details</string>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GoSana</string>
+    <string name="scheduled_commutes">Scheduled Commutes</string>
+    <string name="no_scheduled_rides">No Scheduled Rides</string>
+    <string name="new_schedule">New Schedule</string>
+    <string name="schedule_history">Schedule History</string>
+    <string name="distance">Distance:</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+>>>>>>> bdeca51dff2d971f95255bf72910c55fbfa05c05
 </resources>

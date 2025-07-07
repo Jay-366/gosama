@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ScheduledCommutesActivity">
+
+    <!-- Header -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/scheduled_commutes"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- No Scheduled Rides Message -->
+    <TextView
+        android:id="@+id/tvNoScheduledRides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You don't have any scheduled rides yet."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone" />
+
+    <!-- Schedule History Section -->
+    <LinearLayout
+        android:id="@+id/layoutScheduleHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Scheduled Rides"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- This would typically be a RecyclerView or ListView for showing scheduled rides -->
+        <!-- For now, just adding a placeholder item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weekdays at 8:00 AM"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From: 123 Main St\nTo: Office Building" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- New Schedule Button -->
+    <Button
+        android:id="@+id/btnNewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Schedule"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
