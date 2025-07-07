@@ -4,83 +4,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="12dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="06 Mar 2024, 11:99" />
 
-            <ImageView
-                android:id="@+id/profileIcon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:src="@drawable/ic_baseline_person_24" />
+        <ImageView
+            android:id="@+id/optionsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_horiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dateTime" />
 
-            <LinearLayout
-                android:id="@+id/rideInfoLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/profileIcon"
-                android:orientation="vertical">
+        <ImageView
+            android:id="@+id/driverImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circular_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateTime" />
 
-                <TextView
-                    android:id="@+id/driverName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    tools:text="John Doe" />
+        <TextView
+            android:id="@+id/driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Driver"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/driverImage"
+            app:layout_constraintTop_toTopOf="@+id/driverImage" />
 
-                <TextView
-                    android:id="@+id/rideRoute"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/darker_gray"
-                    tools:text="From Kuala Lumpur to Petaling Jaya" />
+        <TextView
+            android:id="@+id/driverCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="At company: 1 year"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/driverImage"
+            app:layout_constraintTop_toBottomOf="@+id/driverName" />
 
-            </LinearLayout>
+        <TextView
+            android:id="@+id/driverRides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Rride: 1000"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/driverImage"
+            app:layout_constraintTop_toBottomOf="@+id/driverCompany" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:gravity="end"
-                android:orientation="vertical">
+        <ImageView
+            android:id="@+id/startPin"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_location_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/driverImage" />
 
-                <TextView
-                    android:id="@+id/rideTime"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    tools:text="8:30 AM" />
+        <TextView
+            android:id="@+id/startLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/startPin"
+            app:layout_constraintTop_toTopOf="@+id/startPin"
+            tools:text="1901 Thornridge Cir. Shiloh, Hawaii 81063" />
 
-                <TextView
-                    android:id="@+id/rideDetails"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="3 seats | RM5" />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/startPin"
+            app:layout_constraintStart_toStartOf="@+id/startPin"
+            app:layout_constraintTop_toBottomOf="@+id/startPin" />
 
-            </LinearLayout>
+        <ImageView
+            android:id="@+id/addStopPin"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_add_stop"
+            app:layout_constraintEnd_toEndOf="@+id/line1"
+            app:layout_constraintStart_toStartOf="@+id/line1"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
 
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/addStopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Add stop"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/addStopPin"
+            app:layout_constraintStart_toEndOf="@+id/addStopPin"
+            app:layout_constraintTop_toTopOf="@+id/addStopPin" />
 
-        <Button
-            android:id="@+id/joinRideButton"
-            android:layout_width="match_parent"
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/addStopPin"
+            app:layout_constraintStart_toStartOf="@+id/addStopPin"
+            app:layout_constraintTop_toBottomOf="@+id/addStopPin" />
+
+        <ImageView
+            android:id="@+id/endPin"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_location_end"
+            app:layout_constraintEnd_toEndOf="@+id/line2"
+            app:layout_constraintStart_toStartOf="@+id/line2"
+            app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+        <TextView
+            android:id="@+id/endLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/endPin"
+            app:layout_constraintTop_toTopOf="@+id/endPin"
+            tools:text="6391 Elgin St. Celina, Delaware 10299" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Join Ride" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endLocation"
+            tools:text="$7.00" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/statusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:textAllCaps="false"
+            android:backgroundTint="#2c3e50"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>

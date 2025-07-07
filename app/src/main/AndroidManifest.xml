@@ -50,6 +50,9 @@
             android:name=".RideDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".MyScheduleActivity"
+            android:exported="false" />
+        <activity
             android:name=".ParcelDeliveryActivity"
             android:exported="false" />
         <activity

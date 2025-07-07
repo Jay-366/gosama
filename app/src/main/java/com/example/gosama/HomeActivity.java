@@ -56,7 +56,8 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         scheduleCard.setOnClickListener(v -> {
-            // TODO: Implement schedule functionality
+            Intent intent = new Intent(HomeActivity.this, MyScheduleActivity.class);
+            startActivity(intent);
         });
 
         // Set up bottom navigation
