@@ -31,4 +31,10 @@
     <color name="section_bg">#FFFFFF</color>
     <color name="ad_card_bg">#F5F5F5</color>
     <color name="divider">#E0E0E0</color>
+    <color name="quick_action_button">#80c3d4c5</color>
+    <color name="quick_action_ripple">#65997f</color>
+    <color name="nav_selected">#7fa88c</color>
+    <color name="nav_unselected">#757575</color>
+    <color name="cursor_gray_green">#7fa88c</color>
+    <color name="chip_gray_green_light">#e6f2ec</color>
 </resources>

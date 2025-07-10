@@ -12,6 +12,6 @@ public interface ChatbotApiService {
     @POST("chat")
     Call<ChatResponse> sendChatMessage(@Body ChatRequest request);
     
-    @POST("ride-assistance")
+    @POST("chat")
     Call<ChatResponse> sendRideAssistanceMessage(@Body ChatRequest request);
 } 

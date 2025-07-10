@@ -15,9 +15,9 @@ public class Ride {
         // Default constructor required for calls to DataSnapshot.getValue(Ride.class)
     }
 
-    public Ride(String departure, String destination, String date, String time, String driverName, double price, String driverCompany, int driverRides, String status) {
-        this.departure = departure;
-        this.destination = destination;
+    public Ride(String pickupAddress, String dropoffAddress, String date, String time, String driverName, double price, String driverCompany, int driverRides, String status) {
+        this.departure = pickupAddress;
+        this.destination = dropoffAddress;
         this.date = date;
         this.time = time;
         this.driverName = driverName;

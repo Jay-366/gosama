@@ -3,7 +3,45 @@
     <style name="Base.Theme.Gosama" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/nav_selected</item>
+        <item name="colorPrimaryVariant">@color/nav_selected</item>
+        <item name="colorAccent">@color/nav_selected</item>
+        <item name="colorControlActivated">@color/nav_selected</item>
+        <item name="colorOutline">@android:color/black</item>
+        <item name="materialCalendarTheme">@style/CustomMaterialCalendar</item>
+        <item name="materialTimePickerTheme">@style/CustomMaterialTimePicker</item>
+        <item name="toolbarTheme">@style/AppToolbarTheme</item>
     </style>
 
     <style name="Theme.Gosama" parent="Base.Theme.Gosama" />
+
+    <style name="AppToolbarTheme" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorOnSurface">@android:color/black</item> <!-- This will color the title, subtitle, and icons -->
+    </style>
+
+    <style name="BlackTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#CCCCCC</item>
+        <item name="boxStrokeErrorColor">@color/black</item>
+        <item name="hintTextColor">@color/text_hint</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomMaterialCalendar" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <!-- <item name="materialCalendarSelectionColor">@color/nav_selected</item> -->
+        <!-- <item name="materialCalendarTodayColor">@color/nav_selected</item> -->
+        <item name="colorControlActivated">@color/nav_selected</item>
+        <item name="colorAccent">@color/nav_selected</item>
+    </style>
+
+    <style name="CustomMaterialTimePicker">
+        <item name="colorControlActivated">@color/nav_selected</item>
+        <item name="colorAccent">@color/nav_selected</item>
+        <!-- <item name="materialTimePickerClockActiveColor">@color/nav_selected</item> -->
+        <!-- <item name="materialTimePickerClockInactiveColor">#f5f5f5</item> -->
+    </style>
+
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemPaddingTop">8dp</item>
+        <item name="itemPaddingBottom">8dp</item>
+    </style>
 </resources>

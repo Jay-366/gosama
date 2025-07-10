@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F8FCFA">
+    android:background="@color/background">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
@@ -37,16 +37,16 @@
                 android:gravity="center_vertical">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="EcoStats"
-                    android:textSize="18sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="@color/main_text"
                     android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:layout_marginEnd="48dp"/>
+                    android:gravity="start"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"/>
             </LinearLayout>
 
             <!-- Stats Cards -->
@@ -63,34 +63,49 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_stats_card_bg"
+                    android:background="@drawable/rounded_quick_action_bg"
                     android:padding="24dp"
                     android:layout_marginEnd="8dp"
                     android:fontFamily="sans-serif"
                     android:clipToOutline="true"
-                    android:shape="rectangle"
-                    android:radius="18dp">
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/km_shared"
                         android:textSize="15sp"
                         android:textColor="@color/main_text"
                         android:textStyle="normal"
                         android:fontFamily="sans-serif"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="8dp"
+                        android:gravity="start"/>
 
-                    <TextView
-                        android:id="@+id/tvKmShared"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
-                        android:textSize="28sp"
-                        android:textColor="@color/main_text"
-                        android:textStyle="bold"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="4dp"/>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/ic_kmshared"
+                            app:tint="@color/main_text" />
+
+                        <TextView
+                            android:id="@+id/tvKmShared"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="28sp"
+                            android:textColor="@color/main_text"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="4dp"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -98,34 +113,49 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:background="@drawable/rounded_stats_card_bg"
+                    android:background="@drawable/rounded_quick_action_bg"
                     android:padding="24dp"
                     android:layout_marginStart="8dp"
                     android:fontFamily="sans-serif"
                     android:clipToOutline="true"
-                    android:shape="rectangle"
-                    android:radius="18dp">
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/co2_saved"
                         android:textSize="15sp"
                         android:textColor="@color/main_text"
                         android:textStyle="normal"
                         android:fontFamily="sans-serif"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="8dp"
+                        android:gravity="start"/>
 
-                    <TextView
-                        android:id="@+id/tvCo2Saved"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0kg"
-                        android:textSize="28sp"
-                        android:textColor="@color/main_text"
-                        android:textStyle="bold"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="4dp"/>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/ic_eco"
+                            app:tint="@color/main_text"
+                            android:layout_marginEnd="8dp"/>
+
+                        <TextView
+                            android:id="@+id/tvCo2Saved"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0kg"
+                            android:textSize="28sp"
+                            android:textColor="@color/main_text"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="4dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -402,60 +432,16 @@
                     android:layout_marginTop="4dp"/>
             </LinearLayout>
 
-            <!-- Rewards / Redeemed Tab Row -->
-            <FrameLayout
+            <!-- Rewards / Redeemed Tab Row (new framework) -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/rewardsTabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:paddingLeft="16dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="8dp"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:id="@+id/rewardsTabRow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="start|center_vertical"
-                    android:paddingTop="16dp"
-                    android:paddingBottom="4dp"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/tabRewardsText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rewards"
-                        android:textStyle="bold"
-                        android:textColor="@color/main_text"
-                        android:textSize="16sp"
-                        android:gravity="start"
-                        android:clickable="true"
-                        android:focusable="true"/>
-
-                    <TextView
-                        android:id="@+id/tabRedeemedText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Redeemed"
-                        android:textStyle="bold"
-                        android:textColor="@color/secondary_text"
-                        android:textSize="16sp"
-                        android:gravity="start"
-                        android:layout_marginStart="32dp"
-                        android:clickable="true"
-                        android:focusable="true"/>
-                </LinearLayout>
-
-                <View
-                    android:id="@+id/tabIndicator"
-                    android:layout_width="wrap_content"
-                    android:layout_height="3dp"
-                    android:background="@android:color/black"
-                    android:layout_gravity="bottom|start"/>
-            </FrameLayout>
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/white"
+                app:tabIndicatorColor="@color/nav_selected"
+                app:tabSelectedTextColor="@color/nav_selected"
+                app:tabTextColor="@color/text_secondary" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewRewards"
@@ -470,15 +456,27 @@
                 android:visibility="gone"
                 android:nestedScrollingEnabled="false"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOthers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
+        style="@style/CustomBottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        app:menu="@menu/bottom_nav_menu"/>
+        android:layout_gravity="bottom"
+        android:background="@color/background"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemRippleColor="@color/quick_action_button"
+        app:itemTextColor="@color/nav_item_selector"
+        app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout> 

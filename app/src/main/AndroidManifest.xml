@@ -35,7 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+    
         <activity android:name=".RegisterActivity" android:exported="false" />
         <activity android:name=".HomeActivity" android:exported="false" />
         <activity android:name=".ProfileActivity" android:exported="false" />
@@ -43,20 +43,22 @@
         <activity android:name=".ChatActivity" android:exported="false" />
         <activity android:name=".FindRideActivity" android:exported="false" />
         <activity android:name=".RewardsActivity" android:exported="false" />
-        <activity
-            android:name=".RideDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyScheduleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ParcelDeliveryActivity"
-            android:exported="false" />
+        <activity android:name=".LiveTrackingActivity" android:exported="false" />
+        <activity android:name=".ScheduledCommutesActivity" android:exported="false" />
+        <activity android:name=".RateRideActivity" android:exported="false" />
+        <activity android:name=".ParcelDeliveryActivity" android:exported="false" />
+        <activity android:name=".RideDetailActivity" android:exported="false" />
         <activity
             android:name=".BookingConfirmationActivity"
             android:exported="false" />
         <activity
             android:name=".OfferRideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostRideRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleBookingActivity"
             android:exported="false" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

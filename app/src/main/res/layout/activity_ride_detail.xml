@@ -53,6 +53,41 @@
                     tools:text="RM 15" />
             </RelativeLayout>
 
+            <!-- Editable Pick-up and Drop-off Fields -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pick-up Address"
+                android:layout_marginTop="16dp"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_location_start"
+                app:endIconContentDescription="Use current location"
+                app:endIconCheckable="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPickupAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Drop-off Address"
+                android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editDropoffAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Map Component -->
+            <fragment
+                android:id="@+id/rideDetailMap"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"/>
+
             <!-- Route Timeline -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,8 +143,7 @@
                         android:id="@+id/dropoffTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="24dp"
-                        tools:text="07:00 PM" />
+                        android:layout_marginTop="24dp"/>
 
                     <TextView
                         android:id="@+id/dropoffAddress"
@@ -138,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    tools:text="Ahmed Ali" />
+                    tools:text="Kangyan Ong" />
 
                 <TextView
                     android:id="@+id/driverRating"
@@ -146,6 +180,16 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/driverName"
                     tools:text="4.5/5 - 13 ratings" />
+
+                <TextView
+                    android:id="@+id/contactDriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/driverRating"
+                    android:textColor="#FF5858"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp"
+                    tools:text="Contact driver" />
 
                 <ImageView
                     android:layout_width="48dp"
@@ -208,7 +252,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:backgroundTint="#ED6A5A"
+                android:backgroundTint="#9dd2a6"
                 android:padding="16dp"
                 android:text="Request for ride"
                 android:textAllCaps="false"

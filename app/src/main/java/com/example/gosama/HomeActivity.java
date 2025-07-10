@@ -2,7 +2,12 @@ package com.example.gosama;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.app.AlertDialog;
+import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.gosama.viewmodel.UserViewModel;
@@ -27,9 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         MaterialCardView findRideCard = findViewById(R.id.findRideCard);
         MaterialCardView offerRideCard = findViewById(R.id.offerRideCard);
         MaterialCardView sendParcelCard = findViewById(R.id.sendParcelCard);
-        MaterialCardView scheduleCard = findViewById(R.id.scheduleCard);
-        MaterialCardView chatbotCard = findViewById(R.id.chatbotCard);
-        MaterialCardView supportChatCard = findViewById(R.id.supportChatCard);
+        MaterialCardView scheduledCommutesCard = findViewById(R.id.scheduledCommutesCard);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
 
         // Observe user data
@@ -58,18 +61,8 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        scheduleCard.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, MyScheduleActivity.class);
-            startActivity(intent);
-        });
-
-        chatbotCard.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, AssistantChatActivity.class);
-            startActivity(intent);
-        });
-
-        supportChatCard.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, ChatActivity.class);
+        scheduledCommutesCard.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, ScheduledCommutesActivity.class);
             startActivity(intent);
         });
 
@@ -77,16 +70,24 @@ public class HomeActivity extends AppCompatActivity {
         bottomNav.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_rewards) {
-                startActivity(new Intent(HomeActivity.this, RewardsActivity.class));
+                try {
+                    startActivity(new Intent(HomeActivity.this, RewardsActivity.class));
+                } catch (Exception e) {
+                    android.util.Log.e("HomeActivity", "Error starting RewardsActivity: " + e.getMessage());
+                    android.widget.Toast.makeText(HomeActivity.this, "Error opening rewards", android.widget.Toast.LENGTH_SHORT).show();
+                }
                 return true;
-            } else if (itemId == R.id.nav_notifications) {
-                // TODO: Navigate to notifications
+            } else if (itemId == R.id.nav_chat) {
+                startActivity(new Intent(HomeActivity.this, AssistantChatActivity.class));
                 return true;
             } else if (itemId == R.id.nav_profile) {
                 startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
                 return true;
             } else if (itemId == R.id.nav_home) {
                 return true; // Already on home
+            } else if (itemId == R.id.nav_activity) {
+                startActivity(new Intent(HomeActivity.this, LiveTrackingActivity.class));
+                return true;
             }
             return false;
         });
@@ -96,6 +97,52 @@ public class HomeActivity extends AppCompatActivity {
             finish();
             return;
         }
-        String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        handleIntent(getIntent());
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        handleIntent(intent);
+    }
+
+    private void handleIntent(Intent intent) {
+        if (intent != null && intent.getBooleanExtra("SHOW_MATCH_NOTIFICATION", false)) {
+            // Clear the flag to prevent the dialog from showing again on configuration change
+            getIntent().removeExtra("SHOW_MATCH_NOTIFICATION");
+
+            new Handler(Looper.getMainLooper()).postDelayed(this::showMatchedRideDialog, 3000); // 3-second delay
+        }
+    }
+
+    private void showMatchedRideDialog() {
+        if (isFinishing() || isDestroyed()) {
+            return; // Don't show dialog if activity is not running
+        }
+
+        android.view.LayoutInflater inflater = android.view.LayoutInflater.from(this);
+        android.view.View dialogView = inflater.inflate(R.layout.dialog_matched_ride, null);
+
+        final android.app.AlertDialog dialog = new android.app.AlertDialog.Builder(this)
+                .setView(dialogView)
+                .setCancelable(false)
+                .create();
+
+        dialogView.findViewById(R.id.btnClose).setOnClickListener(v -> dialog.dismiss());
+        dialogView.findViewById(R.id.btnNotNow).setOnClickListener(v -> dialog.dismiss());
+        dialogView.findViewById(R.id.btnAccept).setOnClickListener(v -> {
+            dialog.dismiss();
+            Intent intent = new Intent(HomeActivity.this, ScheduledCommutesActivity.class);
+            startActivity(intent);
+        });
+
+        // Make the dialog background transparent
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));
+        }
+
+        dialog.show();
     }
 }

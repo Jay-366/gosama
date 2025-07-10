@@ -6,6 +6,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import android.app.AlertDialog;
+import android.view.LayoutInflater;
+import android.view.View;
 
 public class BookingConfirmationActivity extends AppCompatActivity {
 
@@ -24,9 +27,8 @@ public class BookingConfirmationActivity extends AppCompatActivity {
 
         Button viewRideButton = findViewById(R.id.view_ride_button);
         viewRideButton.setOnClickListener(v -> {
-            // For now, just go back to home screen.
-            // This can be changed to go to a "My Rides" screen later.
             Intent intent = new Intent(BookingConfirmationActivity.this, HomeActivity.class);
+            intent.putExtra("SHOW_MATCH_NOTIFICATION", true); // This will trigger the dialog on the Home screen
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();

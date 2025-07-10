@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_arrow_back_ios_24" />
+        app:navigationIcon="@drawable/ic_arrow_back_green" />
 
     <ImageView
         android:id="@+id/car_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="64dp"
-        android:src="@drawable/ic_car_confirmed"
+        android:src="@drawable/ic_car"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Booked! Your ride has been confirmed!"
+        android:text="Requested! Your request has been sent!"
         android:textColor="@android:color/black"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Your driver will wait only 5mints"
+        android:text="Kindly wait for driver accept"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,9 +57,9 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#ED6A5A"
+        android:backgroundTint="#9dd2a6"
         android:padding="16dp"
-        android:text="View Ride"
+        android:text="OK"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="18sp"

@@ -11,6 +11,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.ArrayList;
 import java.util.List;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.ImageButton;
 
 public class FindRideActivity extends AppCompatActivity implements ParcelAdapter.OnParcelListener {
 
@@ -35,6 +38,12 @@ public class FindRideActivity extends AppCompatActivity implements ParcelAdapter
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setTitle("Find a Ride");
         }
+
+        ImageButton btnAddRide = findViewById(R.id.btnAddRide);
+        btnAddRide.setOnClickListener(v -> {
+            Intent intent = new Intent(this, PostRideRequestActivity.class);
+            startActivity(intent);
+        });
 
         db = FirebaseFirestore.getInstance();
         ridesRecyclerView = findViewById(R.id.ridesRecyclerView);
@@ -97,6 +106,16 @@ public class FindRideActivity extends AppCompatActivity implements ParcelAdapter
         Parcel parcel = parcelList.get(position);
         Toast.makeText(this, "Task taken for parcel: " + parcel.getPickupAddress(), Toast.LENGTH_SHORT).show();
         // TODO: Implement ParcelDetailActivity and navigate to it
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return false;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

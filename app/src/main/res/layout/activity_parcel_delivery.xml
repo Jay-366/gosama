@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/white"
         android:padding="16dp">
 
         <TextView
@@ -84,21 +85,24 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Small" />
+                android:text="Small"
+                app:chipBackgroundColor="@color/selector_chip_gray_green" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/size_medium"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medium" />
+                android:text="Medium"
+                app:chipBackgroundColor="@color/selector_chip_gray_green" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/size_large"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Large" />
+                android:text="Large"
+                app:chipBackgroundColor="@color/selector_chip_gray_green" />
         </com.google.android.material.chip.ChipGroup>
 
         <TextView
@@ -134,7 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Find Driver"
-            android:backgroundTint="@android:color/black"
+            android:backgroundTint="@color/nav_selected"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

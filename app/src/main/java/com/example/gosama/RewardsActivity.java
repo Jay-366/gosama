@@ -41,6 +41,7 @@ import android.view.ViewTreeObserver;
 import android.view.Gravity;
 import android.widget.Button;
 import android.content.Context;
+import com.google.android.material.tabs.TabLayout;
 
 // Add model for RedeemedReward
 class RedeemedReward {
@@ -58,12 +59,11 @@ class RedeemedRewardAdapter extends RecyclerView.Adapter<RedeemedRewardAdapter.V
     RedeemedRewardAdapter(List<RedeemedReward> list) { this.redeemedList = list; }
     static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView imageViewRewardPic;
-        TextView tvRewardName, tvPointsNeeded, tvRedeemedAt;
+        TextView tvRewardName, tvRedeemedAt;
         ViewHolder(View v) {
             super(v);
             imageViewRewardPic = v.findViewById(R.id.imageViewRewardPic);
             tvRewardName = v.findViewById(R.id.tvRewardName);
-            tvPointsNeeded = v.findViewById(R.id.tvPointsNeeded);
             tvRedeemedAt = new TextView(v.getContext());
             ((LinearLayout) v.findViewById(R.id.tvRewardName).getParent()).addView(tvRedeemedAt);
             tvRedeemedAt.setTextSize(12f);
@@ -79,9 +79,10 @@ class RedeemedRewardAdapter extends RecyclerView.Adapter<RedeemedRewardAdapter.V
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         RedeemedReward r = redeemedList.get(position);
-        holder.tvPointsNeeded.setVisibility(View.GONE);
         holder.tvRedeemedAt.setText("Redeemed: " + r.redeemedAt);
-        FirebaseFirestore.getInstance().document(r.rewardId).get().addOnSuccessListener(doc -> {
+        FirebaseFirestore.getInstance().collection("rewards").document(r.rewardId).get()
+            .addOnSuccessListener(doc -> {
+                if (doc.exists()) {
             Reward reward = doc.toObject(Reward.class);
             if (reward != null) {
                 holder.tvRewardName.setText(reward.getDisplayRewardName());
@@ -127,6 +128,7 @@ class RedeemedRewardAdapter extends RecyclerView.Adapter<RedeemedRewardAdapter.V
                     Button redeemButton = new Button(context);
                     redeemButton.setText("Redeem");
                     redeemButton.setGravity(Gravity.CENTER_HORIZONTAL);
+                    redeemButton.setBackgroundTintList(android.content.res.ColorStateList.valueOf(context.getResources().getColor(R.color.nav_selected)));
                     redeemButton.setOnClickListener(btnV -> {
                         // Optionally, call redeemReward() if you want to allow re-redeeming
                         Toast.makeText(context, "Already redeemed!", Toast.LENGTH_SHORT).show();
@@ -141,6 +143,12 @@ class RedeemedRewardAdapter extends RecyclerView.Adapter<RedeemedRewardAdapter.V
                     builder.show();
                 });
             }
+                }
+            })
+            .addOnFailureListener(e -> {
+                // Handle error - set default values
+                holder.tvRewardName.setText("Unknown Reward");
+                holder.imageViewRewardPic.setImageResource(R.drawable.bg_stats_card);
         });
     }
     @Override
@@ -163,8 +171,8 @@ public class RewardsActivity extends AppCompatActivity {
     private RecyclerView recyclerViewRedeemed;
     private List<RedeemedReward> redeemedList = new ArrayList<>();
     private RedeemedRewardAdapter redeemedAdapter;
-    private View tabIndicator;
-    private TextView tabRewardsText, tabRedeemedText;
+    private RecyclerView recyclerViewOthers;
+    private com.google.android.material.tabs.TabLayout rewardsTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,9 +195,8 @@ public class RewardsActivity extends AppCompatActivity {
         lineChart = findViewById(R.id.lineChart);
         recyclerViewRewards = findViewById(R.id.recyclerViewRewards);
         recyclerViewRedeemed = findViewById(R.id.recyclerViewRedeemed);
-        tabRewardsText = findViewById(R.id.tabRewardsText);
-        tabRedeemedText = findViewById(R.id.tabRedeemedText);
-        tabIndicator = findViewById(R.id.tabIndicator);
+        recyclerViewOthers = findViewById(R.id.recyclerViewOthers);
+        rewardsTabLayout = findViewById(R.id.rewardsTabLayout);
 
         // Ensure NestedScrollView is properly configured
         NestedScrollView nestedScrollView = findViewById(R.id.nestedScrollView);
@@ -208,6 +215,10 @@ public class RewardsActivity extends AppCompatActivity {
         redeemedAdapter = new RedeemedRewardAdapter(redeemedList);
         recyclerViewRedeemed.setAdapter(redeemedAdapter);
 
+        // Set up Others RecyclerView (initially hidden)
+        recyclerViewOthers.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewOthers.setVisibility(View.GONE);
+
         // Set up bottom navigation
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
         bottomNav.setSelectedItemId(R.id.nav_rewards);
@@ -221,8 +232,11 @@ public class RewardsActivity extends AppCompatActivity {
                 // Only show the rewards tab, do not finish or navigate
                 showRewardsTab();
                 return true;
-            } else if (itemId == R.id.nav_notifications) {
-                // TODO: Navigate to notifications
+            } else if (itemId == R.id.nav_chat) {
+                startActivity(new Intent(this, AssistantChatActivity.class));
+                return true;
+            } else if (itemId == R.id.nav_activity) {
+                startActivity(new Intent(RewardsActivity.this, LiveTrackingActivity.class));
                 return true;
             } else if (itemId == R.id.nav_profile) {
                 startActivity(new Intent(this, ProfileActivity.class));
@@ -233,45 +247,50 @@ public class RewardsActivity extends AppCompatActivity {
         });
         bottomNav.setOnItemReselectedListener(item -> {});
 
-        // Set up initial indicator position after layout
-        ViewTreeObserver vto = tabRewardsText.getViewTreeObserver();
-        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+        // Set up TabLayout for switching tabs
+        rewardsTabLayout.addTab(rewardsTabLayout.newTab().setText("Rewards"));
+        rewardsTabLayout.addTab(rewardsTabLayout.newTab().setText("Redeemed"));
+        rewardsTabLayout.addTab(rewardsTabLayout.newTab().setText("Others"));
+        rewardsTabLayout.addOnTabSelectedListener(new com.google.android.material.tabs.TabLayout.OnTabSelectedListener() {
             @Override
-            public void onGlobalLayout() {
-                tabRewardsText.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                moveTabIndicator(tabRewardsText);
+            public void onTabSelected(com.google.android.material.tabs.TabLayout.Tab tab) {
+                if (tab.getPosition() == 0) {
+                    showRewardsTab();
+                } else if (tab.getPosition() == 1) {
+                    showRedeemedTab();
+                } else {
+                    showOthersTab();
+                }
             }
+            @Override
+            public void onTabUnselected(com.google.android.material.tabs.TabLayout.Tab tab) {}
+            @Override
+            public void onTabReselected(com.google.android.material.tabs.TabLayout.Tab tab) {}
         });
-
-        tabRewardsText.setOnClickListener(v -> {
+        // Set default tab
+        rewardsTabLayout.selectTab(rewardsTabLayout.getTabAt(0));
             showRewardsTab();
-            moveTabIndicator(tabRewardsText);
-        });
-        tabRedeemedText.setOnClickListener(v -> {
-            showRedeemedTab();
-            moveTabIndicator(tabRedeemedText);
-        });
-        showRewardsTab(); // default
 
         fetchUserData();
         fetchRewards();
     }
 
     private void showRewardsTab() {
-        tabRewardsText.setAlpha(1f);
-        tabRedeemedText.setAlpha(0.5f);
-        findViewById(R.id.recyclerViewRewards).setVisibility(View.VISIBLE);
-        findViewById(R.id.recyclerViewRedeemed).setVisibility(View.GONE);
-        moveTabIndicator(tabRewardsText);
+        recyclerViewRewards.setVisibility(View.VISIBLE);
+        recyclerViewRedeemed.setVisibility(View.GONE);
+        recyclerViewOthers.setVisibility(View.GONE);
     }
 
     private void showRedeemedTab() {
-        tabRewardsText.setAlpha(0.5f);
-        tabRedeemedText.setAlpha(1f);
-        findViewById(R.id.recyclerViewRewards).setVisibility(View.GONE);
-        findViewById(R.id.recyclerViewRedeemed).setVisibility(View.VISIBLE);
-        moveTabIndicator(tabRedeemedText);
-        // Do not call finish() or startActivity here
+        recyclerViewRewards.setVisibility(View.GONE);
+        recyclerViewRedeemed.setVisibility(View.VISIBLE);
+        recyclerViewOthers.setVisibility(View.GONE);
+    }
+
+    private void showOthersTab() {
+        recyclerViewRewards.setVisibility(View.GONE);
+        recyclerViewRedeemed.setVisibility(View.GONE);
+        recyclerViewOthers.setVisibility(View.VISIBLE);
     }
 
     private void fetchUserData() {
@@ -511,6 +530,7 @@ public class RewardsActivity extends AppCompatActivity {
             Button redeemButton = new Button(this);
             redeemButton.setText("Redeem");
             redeemButton.setGravity(Gravity.CENTER_HORIZONTAL);
+            redeemButton.setBackgroundTintList(android.content.res.ColorStateList.valueOf(getResources().getColor(R.color.nav_selected)));
             redeemButton.setOnClickListener(v -> {
                 redeemReward(reward, userPoints);
             });
@@ -547,29 +567,5 @@ public class RewardsActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     Toast.makeText(this, "Failed to redeem reward. Please try again.", Toast.LENGTH_SHORT).show();
                 });
-    }
-
-    private void moveTabIndicator(final TextView selectedTab) {
-        int[] parentLoc = new int[2];
-        ((View)selectedTab.getParent()).getLocationOnScreen(parentLoc);
-        int[] tabLoc = new int[2];
-        selectedTab.getLocationOnScreen(tabLoc);
-        int left = tabLoc[0] - parentLoc[0];
-        int width = selectedTab.getWidth();
-        // Animate indicator position and width
-        tabIndicator.animate().x(selectedTab.getX()).setDuration(150).start();
-        ValueAnimator anim = ValueAnimator.ofInt(tabIndicator.getWidth(), width);
-        anim.addUpdateListener(animation -> {
-            int val = (Integer) animation.getAnimatedValue();
-            tabIndicator.getLayoutParams().width = val;
-            tabIndicator.requestLayout();
-        });
-        anim.setDuration(150);
-        anim.start();
-        // Set tab styles
-        tabRewardsText.setTypeface(null, selectedTab == tabRewardsText ? Typeface.BOLD : Typeface.NORMAL);
-        tabRedeemedText.setTypeface(null, selectedTab == tabRedeemedText ? Typeface.BOLD : Typeface.NORMAL);
-        tabRewardsText.setTextColor(getResources().getColor(selectedTab == tabRewardsText ? R.color.main_text : R.color.secondary_text));
-        tabRedeemedText.setTextColor(getResources().getColor(selectedTab == tabRedeemedText ? R.color.main_text : R.color.secondary_text));
     }
 } 

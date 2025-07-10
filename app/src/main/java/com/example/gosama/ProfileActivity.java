@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -11,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.gosama.viewmodel.UserViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.android.material.tabs.TabLayout;
 
 public class ProfileActivity extends AppCompatActivity {
     private UserViewModel userViewModel;
@@ -31,6 +33,9 @@ public class ProfileActivity extends AppCompatActivity {
         Button btnSettings = findViewById(R.id.btnSettings);
         Button btnEditProfile = findViewById(R.id.btnEditProfile);
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
+        TabLayout tabLayout = findViewById(R.id.profileTabLayout);
+        final View layoutDashboard = findViewById(R.id.layoutDashboard);
+        final View layoutActivity = findViewById(R.id.layoutActivity);
 
         // Set selected item in bottom navigation
         bottomNav.setSelectedItemId(R.id.nav_profile);
@@ -44,13 +49,39 @@ public class ProfileActivity extends AppCompatActivity {
             } else if (itemId == R.id.nav_rewards) {
                 startActivity(new Intent(ProfileActivity.this, RewardsActivity.class));
                 return true;
-            } else if (itemId == R.id.nav_notifications) {
-                // TODO: Navigate to notifications
+            } else if (itemId == R.id.nav_chat) {
+                startActivity(new Intent(ProfileActivity.this, AssistantChatActivity.class));
+                return true;
+            } else if (itemId == R.id.nav_activity) {
+                startActivity(new Intent(ProfileActivity.this, LiveTrackingActivity.class));
                 return true;
             } else if (itemId == R.id.nav_profile) {
                 return true; // Already on profile
             }
             return false;
+        });
+
+        // Set up tabs
+        tabLayout.addTab(tabLayout.newTab().setText("Dashboard"));
+        tabLayout.addTab(tabLayout.newTab().setText("Activity"));
+        // Show dashboard by default
+        layoutDashboard.setVisibility(View.VISIBLE);
+        layoutActivity.setVisibility(View.GONE);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab.getPosition() == 0) {
+                    layoutDashboard.setVisibility(View.VISIBLE);
+                    layoutActivity.setVisibility(View.GONE);
+                } else {
+                    layoutDashboard.setVisibility(View.GONE);
+                    layoutActivity.setVisibility(View.VISIBLE);
+                }
+            }
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {}
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {}
         });
 
         // Observe user data

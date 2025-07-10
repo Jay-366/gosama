@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
+    android:padding="0dp"
     tools:context=".MainActivity">
+
+    <!-- Inner layout with proper margin -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/paddedContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     <TextView
         android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GoSama"
+            android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Welcome back!"
+            android:textColor="@color/black"
         android:textSize="16sp"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvAppName" />
 
@@ -34,14 +47,15 @@
         android:id="@+id/tvLoginPrompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
         android:text="Please login to continue."
         android:textColor="@color/text_secondary"
-        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvWelcomeBack" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
+            style="@style/BlackTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -49,7 +63,6 @@
         android:textColorHint="@color/text_hint"
         app:boxStrokeColor="@color/text_hint"
         app:hintTextColor="@color/text_hint"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintTop_toBottomOf="@id/tvLoginPrompt">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -57,11 +70,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/nav_selected"
+                android:textCursorDrawable="@drawable/cursor_gray_green"
+                android:textSelectHandle="@drawable/handle_gray_green" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
+            style="@style/BlackTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -69,25 +86,27 @@
         android:textColorHint="@color/text_hint"
         app:boxStrokeColor="@color/text_hint"
         app:hintTextColor="@color/text_hint"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:passwordToggleEnabled="true"
-        app:layout_constraintTop_toBottomOf="@id/tilEmail">
+            app:layout_constraintTop_toBottomOf="@id/tilEmail"
+            app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/nav_selected"
+                android:textCursorDrawable="@drawable/cursor_gray_green"
+                android:textSelectHandle="@drawable/handle_gray_green" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tvForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+            android:padding="8dp"
         android:text="Forgot Password?"
         android:textColor="@color/black"
-        android:padding="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword" />
 
@@ -96,10 +115,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+            android:backgroundTint="@color/nav_selected"
         android:padding="12dp"
         android:text="Login"
         android:textAllCaps="false"
-        android:backgroundTint="@color/button_black"
         app:layout_constraintTop_toBottomOf="@id/tvForgotPassword" />
 
     <TextView
@@ -109,12 +128,13 @@
         android:layout_marginTop="16dp"
         android:text="or"
         android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoogleSignIn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -123,12 +143,12 @@
         android:textColor="@color/black"
         app:icon="@drawable/ic_google"
         app:iconTint="@null"
-        app:strokeColor="@color/text_secondary"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        app:layout_constraintTop_toBottomOf="@id/tvOr" />
+            app:layout_constraintTop_toBottomOf="@id/tvOr"
+            app:strokeColor="@color/text_secondary" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAppleSignIn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -137,9 +157,8 @@
         android:textColor="@color/black"
         app:icon="@drawable/ic_apple"
         app:iconTint="@null"
-        app:strokeColor="@color/text_secondary"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        app:layout_constraintTop_toBottomOf="@id/btnGoogleSignIn" />
+            app:layout_constraintTop_toBottomOf="@id/btnGoogleSignIn"
+            app:strokeColor="@color/text_secondary" />
 
     <TextView
         android:id="@+id/tvRegisterPrompt"
@@ -148,8 +167,10 @@
         android:layout_marginTop="24dp"
         android:text="Don't have an account? Register here!"
         android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAppleSignIn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,8 +39,7 @@ public class RewardAdapter extends RecyclerView.Adapter<RewardAdapter.RewardView
     @Override
     public void onBindViewHolder(@NonNull RewardViewHolder holder, int position) {
         Reward reward = rewardList.get(position);
-        holder.tvRewardName.setText(reward.getRewardName());
-        holder.tvPointsNeeded.setText(reward.getPointsNeed() + " Points");
+        holder.tvRewardName.setText(reward.getDisplayRewardName());
 
         // Use local drawable for Starbucks and ZUS Coffee
         String name = reward.getRewardName() != null ? reward.getRewardName().toLowerCase() : "";
@@ -87,13 +86,12 @@ public class RewardAdapter extends RecyclerView.Adapter<RewardAdapter.RewardView
     }
 
     static class RewardViewHolder extends RecyclerView.ViewHolder {
-        TextView tvRewardName, tvPointsNeeded;
+        TextView tvRewardName;
         android.widget.ImageView imageViewRewardPic;
 
         RewardViewHolder(@NonNull View itemView) {
             super(itemView);
             tvRewardName = itemView.findViewById(R.id.tvRewardName);
-            tvPointsNeeded = itemView.findViewById(R.id.tvPointsNeeded);
             imageViewRewardPic = itemView.findViewById(R.id.imageViewRewardPic);
         }
     }

@@ -14,6 +14,10 @@ const db = admin.firestore();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+  next();
+});
 
 // Health check
 app.get('/', (req, res) => {
@@ -48,10 +52,14 @@ app.get('/user/:uid/parcels', async (req, res) => {
 
 // Chat endpoint (handles general questions, user data, and parcel data)
 app.post('/chat', async (req, res) => {
+  console.log('--- Incoming /chat request ---');
+  console.log('Body:', JSON.stringify(req.body));
   const { message, userId, history } = req.body;
   
   if (!userId) {
-    return res.json({ reply: "Sorry, I couldn't identify your user. Please log in again.", success: false });
+    console.log('No userId provided. Returning error.');
+    res.status(400).json({ reply: "Sorry, I couldn't identify your user. Please log in again.", success: false });
+    return;
   }
 
   // Fetch user info
@@ -62,7 +70,9 @@ app.post('/chat', async (req, res) => {
     if (userDoc.exists) {
       userData = userDoc.data();
     } else {
-      return res.json({ reply: "User not found in the database.", success: false });
+      console.log('User not found in the database. Returning error.');
+      res.status(404).json({ reply: "User not found in the database.", success: false });
+      return;
     }
   } catch (err) {
     return res.json({ reply: `Error fetching user info: ${err.message}` , success: false });
@@ -132,7 +142,9 @@ Assistant: You have 1 parcel. Details: Description: Books, Status: pending, Pick
     return res.json({ reply: aiReply, success: true });
 
   } catch (err) {
-    return res.json({ reply: `Error: ${err.message}`, success: false });
+    console.log('AI error:', err.message);
+    res.status(500).json({ reply: `Error: ${err.message}`, success: false });
+    return;
   }
 });
 

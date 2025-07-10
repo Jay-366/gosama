@@ -5,40 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="0dp">
+    app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:padding="16dp">
 
         <TextView
             android:id="@+id/dateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:textColor="@android:color/black"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="06 Mar 2024, 11:99" />
-
-        <ImageView
-            android:id="@+id/optionsMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_more_horiz"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/dateTime" />
+            app:layout_constraintTop_toBottomOf="@+id/driverImage"
+            tools:text="07 Jul 2025, 2:15 PM" />
 
         <ImageView
             android:id="@+id/driverImage"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/circular_background"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dateTime" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/driverName"
@@ -57,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="At company: 1 year"
+            android:text="Joined: 1 year"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/driverImage"
@@ -68,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Rride: 1000"
+            android:text="Rides: 1023"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/driverImage"
@@ -81,7 +73,7 @@
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_location_start"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/driverImage" />
+            app:layout_constraintTop_toBottomOf="@+id/dateTime" />
 
         <TextView
             android:id="@+id/startLocation"
@@ -136,7 +128,7 @@
             android:id="@+id/endPin"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/ic_location_end"
+            android:src="@drawable/ic_location_start"
             app:layout_constraintEnd_toEndOf="@+id/line2"
             app:layout_constraintStart_toStartOf="@+id/line2"
             app:layout_constraintTop_toBottomOf="@+id/line2" />
@@ -152,28 +144,26 @@
             app:layout_constraintTop_toTopOf="@+id/endPin"
             tools:text="6391 Elgin St. Celina, Delaware 10299" />
 
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/endLocation"
-            tools:text="$7.00" />
-
         <Button
             android:id="@+id/statusButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Completed"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/nav_selected"
+            android:text="Join"
             android:textAllCaps="false"
-            android:backgroundTint="#2c3e50"
             android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/price" />
+            app:layout_constraintTop_toBottomOf="@+id/endLocation" />
+
+        <ImageView
+            android:id="@+id/optionsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_horiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
