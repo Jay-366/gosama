@@ -11,6 +11,11 @@
         <item name="materialCalendarTheme">@style/CustomMaterialCalendar</item>
         <item name="materialTimePickerTheme">@style/CustomMaterialTimePicker</item>
         <item name="toolbarTheme">@style/AppToolbarTheme</item>
+
+        <!-- Set background colors to white -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorSurfaceContainer">@android:color/white</item>
     </style>
 
     <style name="Theme.Gosama" parent="Base.Theme.Gosama" />
@@ -33,7 +38,8 @@
         <item name="colorAccent">@color/nav_selected</item>
     </style>
 
-    <style name="CustomMaterialTimePicker">
+    <style name="CustomMaterialTimePicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:layout_height">wrap_content</item>
         <item name="colorControlActivated">@color/nav_selected</item>
         <item name="colorAccent">@color/nav_selected</item>
         <!-- <item name="materialTimePickerClockActiveColor">@color/nav_selected</item> -->
@@ -44,4 +50,5 @@
         <item name="itemPaddingTop">8dp</item>
         <item name="itemPaddingBottom">8dp</item>
     </style>
+
 </resources>

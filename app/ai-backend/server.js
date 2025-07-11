@@ -1,9 +1,11 @@
 console.log("Starting server.js...");
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccountKey.json');
-require('dotenv').config();
+
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 const axios = require('axios');
 
 admin.initializeApp({

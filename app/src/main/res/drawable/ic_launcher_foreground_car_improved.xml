@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translateX="27"
+        android:translateY="27">
+        <!-- Car body with rounded shape -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M52,33C33,33 23,41 23,55C23,69 33,81 52,81C71,81 85,69 85,55C85,41 71,33 52,33Z"/>
+        <!-- Car outline - more accurate to the image -->
+        <path
+            android:fillColor="#004D40"
+            android:strokeWidth="2"
+            android:strokeColor="#004D40"
+            android:pathData="M52,30C31,30 20,40 20,55C20,70 31,84 52,84C73,84 88,70 88,55C88,40 73,30 52,30ZM52,35C69,35 80,43 80,55C80,67 69,79 52,79C35,79 28,67 28,55C28,43 35,35 52,35Z"/>
+        <!-- Front window section -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M34,39L51,39C53,39 55,40 55,42L62,48C63,49 64,49 65,49L75,49C77,49 78,47 78,45L78,42C78,40 77,39 75,39L62,39L56,46L36,46C34,46 33,44 33,42L33,41C33,40 33,39 34,39Z"/>
+        <!-- Left headlight (eye) -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M38,52m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+        <!-- Right headlight (eye) -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M66,52m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+        <!-- Smile - more curved and friendly -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M52,62C46,62 41,60 39,56C38,54 39,52 41,53C43,54 47,55 52,55C57,55 61,54 63,53C65,52 66,54 65,56C63,60 58,62 52,62Z"/>
+        <!-- Left wheel -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M37,68m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+        <!-- Right wheel -->
+        <path
+            android:fillColor="#004D40"
+            android:pathData="M67,68m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0"/>
+        <!-- Highlight on left wheel for dimension -->
+        <path
+            android:fillColor="#007566"
+            android:pathData="M37,68m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+        <!-- Highlight on right wheel for dimension -->
+        <path
+            android:fillColor="#007566"
+            android:pathData="M67,68m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    </group>
+</vector>
