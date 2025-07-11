@@ -16,3 +16,4 @@ local.properties
 
 # Secrets
 /app/ai-backend/serviceAccountKey.json
+**/.env
