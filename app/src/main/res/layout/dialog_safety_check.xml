@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvSafetyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Check"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSafetyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle has stopped. Are you safe?"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvSafetyTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 seconds to respond"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSafe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I'm Safe"
+            android:backgroundTint="#9dd2a6"
+            android:textColor="#fff"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnNotSafe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Not Safe"
+            android:backgroundTint="#F44336"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</LinearLayout> 

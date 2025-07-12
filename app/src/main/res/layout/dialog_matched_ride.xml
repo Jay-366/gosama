@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_toast_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_green_circle" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_green_tick"
+                android:tint="@android:color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:text="Matched Ride Found !"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMatchedMessage"
+        android:text="Your ride from Taylor’s to IOI Mall\nPuchong found driver !"
+        android:textSize="16sp"
+        android:textColor="#444444"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:text="View"
+            android:backgroundTint="#9dd2a6"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button_accept"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginEnd="12dp"/>
+
+        <Button
+            android:id="@+id/btnNotNow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F5F5F5"
+            android:text="Not now"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout> 

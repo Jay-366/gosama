@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Location permissions for Google Maps -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GosamaApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gosama"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:enableOnBackInvokedCallback="true"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- 🔑 Google Maps API Key (loaded from strings.xml or google_maps_api.xml) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".AssistantChatActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".FindRideActivity" android:exported="false" />
+        <activity android:name=".RewardsActivity" android:exported="false" />
+        <activity android:name=".LiveTrackingActivity" android:exported="false" />
+        <activity android:name=".ScheduledCommutesActivity" android:exported="false" />
+        <activity android:name=".RateRideActivity" android:exported="false" />
+        <activity android:name=".ParcelDeliveryActivity" android:exported="false" />
+        <activity android:name=".RideDetailActivity" android:exported="false" />
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfferRideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostRideRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleBookingActivity"
+            android:exported="false" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+</manifest>

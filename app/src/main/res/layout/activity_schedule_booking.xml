@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ScheduleBookingActivity"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:title="Schedule a Ride"
+        app:titleTextColor="@android:color/black" />
+
+    <!-- Days Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Days"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon" />
+
+            <CheckBox
+                android:id="@+id/cbTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue" />
+
+            <CheckBox
+                android:id="@+id/cbWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed" />
+
+            <CheckBox
+                android:id="@+id/cbThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu" />
+
+            <CheckBox
+                android:id="@+id/cbFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat" />
+
+            <CheckBox
+                android:id="@+id/cbSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Time Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSelectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/nav_selected"
+        android:textColor="@color/white" />
+
+    <!-- From Location -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etFromLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter starting location"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- To Location -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etToLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter destination"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Schedule"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/nav_selected"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout> 

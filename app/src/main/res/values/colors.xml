@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_hint">#757575</color>
+    <color name="button_black">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="background">#FFFFFF</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="gray">#888888</color>
+    <color name="main_text">#111111</color>
+    <color name="secondary_text">#757575</color>
+    <color name="card_bg">#f2f2f2</color>
+    <color name="progress_bg">#E0E0E0</color>
+    <color name="progress_fill">#333333</color>
+    <color name="progress_fill_alt">#4CAF50</color>
+    <color name="stats_card_bg">#F5F5F5</color>
+    
+    <!-- Chat Interface Colors - Minimalist Black & White -->
+    <color name="chat_background">#FFFFFF</color>
+    <color name="chat_text_primary">#000000</color>
+    <color name="chat_text_secondary">#666666</color>
+    <color name="chat_border">#E0E0E0</color>
+    <color name="chat_user_bubble">#000000</color>
+    <color name="chat_assistant_bubble">#F5F5F5</color>
+    <color name="chat_input_background">#FFFFFF</color>
+    <color name="chat_input_border">#E0E0E0</color>
+    <color name="chat_button_background">#000000</color>
+    <color name="chat_button_text">#FFFFFF</color>
+    <color name="section_bg">#FFFFFF</color>
+    <color name="ad_card_bg">#F5F5F5</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="quick_action_button">#80c3d4c5</color>
+    <color name="quick_action_ripple">#65997f</color>
+    <color name="nav_selected">#7fa88c</color>
+    <color name="nav_unselected">#757575</color>
+    <color name="cursor_gray_green">#7fa88c</color>
+    <color name="chip_gray_green_light">#e6f2ec</color>
+</resources>

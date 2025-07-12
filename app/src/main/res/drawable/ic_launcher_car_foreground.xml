@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Car body - white with dark green outline -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,50C34,44 39,37 49,35C59,33 67,35 74,40C81,45 81,54 75,59C69,64 58,66 48,65C38,64 34,56 34,50Z" />
+        
+    <!-- Car outline -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M34,50C34,44 39,37 49,35C59,33 67,35 74,40C81,45 81,54 75,59C69,64 58,66 48,65C38,64 34,56 34,50ZM38,50C38,45 42,40 49,38.5C56,37 64,39 70,43C76,47 76,53 71,57C66,61 57,62.5 49,61.5C41,60.5 38,55 38,50Z" />
+        
+    <!-- Left wheel -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M46,65m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+        
+    <!-- Right wheel -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M68,65m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+        
+    <!-- Windows -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M40,42L49,38L57,38L69,44L69,48L55,48L48,43L40,47Z" />
+        
+    <!-- Left eye -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M45,50m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        
+    <!-- Right eye -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M63,50m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        
+    <!-- Smile -->
+    <path
+        android:fillColor="#0B4119"
+        android:pathData="M48,55C50,58 58,58 60,55C60.5,54.5 60,53.5 59,53.5L49,53.5C48,53.5 47.5,54.5 48,55Z" />
+</vector>
