@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.gosama.app-mergeDebugResources-40:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Loy Qun Jie\\.gradle\\caches\\8.11.1\\transforms\\1a0bdcf54ccc6dd54325b0d4be8066aa\\transformed\\appcompat-1.7.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,994 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:2:1-68:12
+MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7b2a9d5b3ae55d3408d92de96beb69f6\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94a9fee637211dceb2f5df3719faa61a\transformed\play-services-location-21.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b1a404a40b82bc5dfd212b73d6ab93c9\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d69a94a79b519862d9989e57f546635b\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2a2628efc4f7ca76a8e98638d854ab27\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1a0bdcf54ccc6dd54325b0d4be8066aa\transformed\appcompat-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\32b47ab1ca2cf8c634656b130a4d54ca\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\26f1a7b96f064518dc4d379a2adf0a7d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\00db5d370f9b49d3eaf2049e886f8cda\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7911391722eba182e446fec21b267c1f\transformed\play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\05773240311e04b82ae2be5845940c04\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2517debcc3f3aa9839c4677a878ab9a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58d25aa498fb49282a6acb7a16833cc5\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d1712a45770b5c3fb4f4a0d09373ba73\transformed\integrity-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4e51efb081dace0ddb0e83df2e789b3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\376dba5e73a1a91c1de7bf24b32152fb\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3eeca4880ad4f31f4c222bf53a65d63b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ad8adc5ee60661714aa19c8b39201560\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\73c6bc7f4c92832c8f61b12e54d02f68\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3895127ec89c1715faea15e9217eac60\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0f18ec46f1a3444bf57c6c3b2b4fe227\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\53a7eecc636d225e579cf73dcc3e5811\transformed\core-ktx-1.13.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\800ecb9bf48d2e25c0e80e2d68f998dd\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\60179a0b414e945bd7713dc99c38f89c\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6a0a351dbc2a09af3fc3089aab6e6482\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\129560e9c0537a8b89e37517d822120d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a5a074c7d7284696ddbedecb901a4b7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3f8a9ba0006bd5aa3244cb4a8b159217\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\46d743d6e00fadf9a07a99c7c7ecadf6\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0ee6d38b600bff61c576fd6f53549e00\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\db1fced27c0a6af65bcf63a220052641\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\932bef20fe0722f0de6d2d174112379b\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\451168e83b25c901619a7c22df6973ee\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\848a1c6d041951940d076f9af4024844\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\67dcac40311b1681a3014e4bdd956501\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a0a9ae4464e8bf9b6d8f711572b008e6\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0106de5d1fd900ec55f43fd099e87286\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\42ee70c2393fa1a7b80556b12de36ed8\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b97e6b0565fe207ac73390651c1e76\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a19c9710cada1bafb298c434b9424aa\transformed\play-services-measurement-base-21.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\61eaf2879a259c2965b0c79ec090e9ce\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ebd1f61bfd0ecdc11f31d556b0954dab\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\727ad542c2d21ecd20de67773a80aae9\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a1dded6971cd7bc9c0a2d1022b4b4eee\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\663eccde291bc1b930fc8328b45d48e3\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:15:1-35:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\27a3d2f6e402389ac220f895ff827fd3\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c2bfb7d25a5bcad4b65d858a7674990d\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a311701d4f64b7da4ba1c1a7c3ba8577\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2445b6bd6f9e340dde6ba71903b23236\transformed\transport-api-3.1.0\AndroidManifest.xml:15:1-20:12
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\37e4787b7327f427d017b3e4716abb65\transformed\grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e46a94fa0632ebed87e1a77a1a7468c6\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a789a70679b4dc4d7c54d5a695af9908\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b77a27c6825d6623597295a059f116\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0dd0d6fd8dfca62789c8f3d9e82a27b7\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\97b9601f518785671cae40f7ce17593a\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4546e4702f474173592830e8add52f4a\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6105d8c1988eba430803c1f287ea90f9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a46da5a2a0189d8d21c50bc70a18c794\transformed\firebase-components-17.1.5\AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4f3a8a5124dfb6e2e2aa773acfec57a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4a33f894eb2ba7fae0aff71d7a944fcd\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\54be28706ac28fd737907badea40065e\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e36c0e2523917d1c2e03e9b1401745ea\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1c7ce974cde2e8ca1fb77fc23e30a1b3\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e777388daa349d39be6db21eefa04933\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+	package
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:7:5-81
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:9:5-81
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:12:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:8:22-64
+application
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:10:5-63:19
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:10:5-63:19
+MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7b2a9d5b3ae55d3408d92de96beb69f6\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7b2a9d5b3ae55d3408d92de96beb69f6\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94a9fee637211dceb2f5df3719faa61a\transformed\play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94a9fee637211dceb2f5df3719faa61a\transformed\play-services-location-21.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b1a404a40b82bc5dfd212b73d6ab93c9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b1a404a40b82bc5dfd212b73d6ab93c9\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d69a94a79b519862d9989e57f546635b\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d69a94a79b519862d9989e57f546635b\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7911391722eba182e446fec21b267c1f\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7911391722eba182e446fec21b267c1f\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\05773240311e04b82ae2be5845940c04\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\05773240311e04b82ae2be5845940c04\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:21:5-20
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58d25aa498fb49282a6acb7a16833cc5\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58d25aa498fb49282a6acb7a16833cc5\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d1712a45770b5c3fb4f4a0d09373ba73\transformed\integrity-1.1.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d1712a45770b5c3fb4f4a0d09373ba73\transformed\integrity-1.1.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ad8adc5ee60661714aa19c8b39201560\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ad8adc5ee60661714aa19c8b39201560\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\73c6bc7f4c92832c8f61b12e54d02f68\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\73c6bc7f4c92832c8f61b12e54d02f68\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b97e6b0565fe207ac73390651c1e76\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b97e6b0565fe207ac73390651c1e76\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a19c9710cada1bafb298c434b9424aa\transformed\play-services-measurement-base-21.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a19c9710cada1bafb298c434b9424aa\transformed\play-services-measurement-base-21.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\61eaf2879a259c2965b0c79ec090e9ce\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\61eaf2879a259c2965b0c79ec090e9ce\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a1dded6971cd7bc9c0a2d1022b4b4eee\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a1dded6971cd7bc9c0a2d1022b4b4eee\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:25:5-33:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:25:5-33:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:23:5-37:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:23:5-37:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4f3a8a5124dfb6e2e2aa773acfec57a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4f3a8a5124dfb6e2e2aa773acfec57a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+	android:roundIcon
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:15:9-43
+	android:networkSecurityConfig
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:20:9-69
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:16:9-41
+	android:fullBackupContent
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:14:9-54
+	tools:targetApi
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:23:9-29
+	android:allowBackup
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:19:9-44
+	android:enableOnBackInvokedCallback
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:21:9-51
+	android:dataExtractionRules
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:13:9-65
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:22:9-44
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:11:9-42
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:26:9-28:55
+	android:value
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:28:13-52
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:27:13-58
+activity#com.example.gosama.MainActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:30:9-37:20
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:31:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:35:27-74
+activity#com.example.gosama.RegisterActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:39:9-79
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:39:52-76
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:39:19-51
+activity#com.example.gosama.HomeActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:40:9-75
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:40:48-72
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:40:19-47
+activity#com.example.gosama.ProfileActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:41:9-78
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:41:51-75
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:41:19-50
+activity#com.example.gosama.AssistantChatActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:42:9-84
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:42:57-81
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:42:19-56
+activity#com.example.gosama.ChatActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:43:9-75
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:43:48-72
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:43:19-47
+activity#com.example.gosama.FindRideActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:44:9-79
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:44:52-76
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:44:19-51
+activity#com.example.gosama.RewardsActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:45:9-78
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:45:51-75
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:45:19-50
+activity#com.example.gosama.LiveTrackingActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:46:9-83
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:46:56-80
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:46:19-55
+activity#com.example.gosama.ScheduledCommutesActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:47:9-88
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:47:61-85
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:47:19-60
+activity#com.example.gosama.RateRideActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:48:9-79
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:48:52-76
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:48:19-51
+activity#com.example.gosama.ParcelDeliveryActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:49:9-85
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:49:58-82
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:49:19-57
+activity#com.example.gosama.RideDetailActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:50:9-81
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:50:54-78
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:50:19-53
+activity#com.example.gosama.BookingConfirmationActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:51:9-53:40
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:53:13-37
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:52:13-56
+activity#com.example.gosama.OfferRideActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:54:9-56:40
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:56:13-37
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:55:13-46
+activity#com.example.gosama.PostRideRequestActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:57:9-59:40
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:59:13-37
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:58:13-52
+activity#com.example.gosama.ScheduleBookingActivity
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:60:9-62:40
+	android:exported
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:62:13-37
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:61:13-52
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:66:5-85
+	android:name
+		ADDED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml:66:22-82
+uses-sdk
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7b2a9d5b3ae55d3408d92de96beb69f6\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7b2a9d5b3ae55d3408d92de96beb69f6\transformed\firebase-analytics-21.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94a9fee637211dceb2f5df3719faa61a\transformed\play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94a9fee637211dceb2f5df3719faa61a\transformed\play-services-location-21.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b1a404a40b82bc5dfd212b73d6ab93c9\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b1a404a40b82bc5dfd212b73d6ab93c9\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d69a94a79b519862d9989e57f546635b\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d69a94a79b519862d9989e57f546635b\transformed\constraintlayout-2.2.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2a2628efc4f7ca76a8e98638d854ab27\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2a2628efc4f7ca76a8e98638d854ab27\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1a0bdcf54ccc6dd54325b0d4be8066aa\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1a0bdcf54ccc6dd54325b0d4be8066aa\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\32b47ab1ca2cf8c634656b130a4d54ca\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\32b47ab1ca2cf8c634656b130a4d54ca\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\26f1a7b96f064518dc4d379a2adf0a7d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\26f1a7b96f064518dc4d379a2adf0a7d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\00db5d370f9b49d3eaf2049e886f8cda\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\00db5d370f9b49d3eaf2049e886f8cda\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7911391722eba182e446fec21b267c1f\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7911391722eba182e446fec21b267c1f\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\05773240311e04b82ae2be5845940c04\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\05773240311e04b82ae2be5845940c04\transformed\firebase-appcheck-interop-17.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2517debcc3f3aa9839c4677a878ab9a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2517debcc3f3aa9839c4677a878ab9a7\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58d25aa498fb49282a6acb7a16833cc5\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58d25aa498fb49282a6acb7a16833cc5\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d1712a45770b5c3fb4f4a0d09373ba73\transformed\integrity-1.1.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d1712a45770b5c3fb4f4a0d09373ba73\transformed\integrity-1.1.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4e51efb081dace0ddb0e83df2e789b3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4e51efb081dace0ddb0e83df2e789b3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\376dba5e73a1a91c1de7bf24b32152fb\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\376dba5e73a1a91c1de7bf24b32152fb\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3eeca4880ad4f31f4c222bf53a65d63b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3eeca4880ad4f31f4c222bf53a65d63b\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ad8adc5ee60661714aa19c8b39201560\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ad8adc5ee60661714aa19c8b39201560\transformed\play-services-measurement-sdk-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\73c6bc7f4c92832c8f61b12e54d02f68\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\73c6bc7f4c92832c8f61b12e54d02f68\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3895127ec89c1715faea15e9217eac60\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3895127ec89c1715faea15e9217eac60\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0f18ec46f1a3444bf57c6c3b2b4fe227\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0f18ec46f1a3444bf57c6c3b2b4fe227\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\53a7eecc636d225e579cf73dcc3e5811\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\53a7eecc636d225e579cf73dcc3e5811\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\800ecb9bf48d2e25c0e80e2d68f998dd\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\800ecb9bf48d2e25c0e80e2d68f998dd\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\60179a0b414e945bd7713dc99c38f89c\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\60179a0b414e945bd7713dc99c38f89c\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6a0a351dbc2a09af3fc3089aab6e6482\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6a0a351dbc2a09af3fc3089aab6e6482\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\129560e9c0537a8b89e37517d822120d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\129560e9c0537a8b89e37517d822120d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a5a074c7d7284696ddbedecb901a4b7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a5a074c7d7284696ddbedecb901a4b7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3f8a9ba0006bd5aa3244cb4a8b159217\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\3f8a9ba0006bd5aa3244cb4a8b159217\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\46d743d6e00fadf9a07a99c7c7ecadf6\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\46d743d6e00fadf9a07a99c7c7ecadf6\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0ee6d38b600bff61c576fd6f53549e00\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0ee6d38b600bff61c576fd6f53549e00\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\db1fced27c0a6af65bcf63a220052641\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\db1fced27c0a6af65bcf63a220052641\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\932bef20fe0722f0de6d2d174112379b\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\932bef20fe0722f0de6d2d174112379b\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\451168e83b25c901619a7c22df6973ee\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\451168e83b25c901619a7c22df6973ee\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\848a1c6d041951940d076f9af4024844\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\848a1c6d041951940d076f9af4024844\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\67dcac40311b1681a3014e4bdd956501\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\67dcac40311b1681a3014e4bdd956501\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a0a9ae4464e8bf9b6d8f711572b008e6\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a0a9ae4464e8bf9b6d8f711572b008e6\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0106de5d1fd900ec55f43fd099e87286\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0106de5d1fd900ec55f43fd099e87286\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\42ee70c2393fa1a7b80556b12de36ed8\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\42ee70c2393fa1a7b80556b12de36ed8\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b97e6b0565fe207ac73390651c1e76\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b97e6b0565fe207ac73390651c1e76\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a19c9710cada1bafb298c434b9424aa\transformed\play-services-measurement-base-21.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a19c9710cada1bafb298c434b9424aa\transformed\play-services-measurement-base-21.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\61eaf2879a259c2965b0c79ec090e9ce\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\61eaf2879a259c2965b0c79ec090e9ce\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ebd1f61bfd0ecdc11f31d556b0954dab\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ebd1f61bfd0ecdc11f31d556b0954dab\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\727ad542c2d21ecd20de67773a80aae9\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\727ad542c2d21ecd20de67773a80aae9\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a1dded6971cd7bc9c0a2d1022b4b4eee\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a1dded6971cd7bc9c0a2d1022b4b4eee\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\663eccde291bc1b930fc8328b45d48e3\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\663eccde291bc1b930fc8328b45d48e3\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\27a3d2f6e402389ac220f895ff827fd3\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\27a3d2f6e402389ac220f895ff827fd3\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c2bfb7d25a5bcad4b65d858a7674990d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c2bfb7d25a5bcad4b65d858a7674990d\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a311701d4f64b7da4ba1c1a7c3ba8577\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a311701d4f64b7da4ba1c1a7c3ba8577\transformed\volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2445b6bd6f9e340dde6ba71903b23236\transformed\transport-api-3.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2445b6bd6f9e340dde6ba71903b23236\transformed\transport-api-3.1.0\AndroidManifest.xml:18:5-44
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\37e4787b7327f427d017b3e4716abb65\transformed\grpc-android-1.52.1\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\37e4787b7327f427d017b3e4716abb65\transformed\grpc-android-1.52.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e46a94fa0632ebed87e1a77a1a7468c6\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e46a94fa0632ebed87e1a77a1a7468c6\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a789a70679b4dc4d7c54d5a695af9908\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a789a70679b4dc4d7c54d5a695af9908\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b77a27c6825d6623597295a059f116\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\93b77a27c6825d6623597295a059f116\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0dd0d6fd8dfca62789c8f3d9e82a27b7\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0dd0d6fd8dfca62789c8f3d9e82a27b7\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\97b9601f518785671cae40f7ce17593a\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\97b9601f518785671cae40f7ce17593a\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4546e4702f474173592830e8add52f4a\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4546e4702f474173592830e8add52f4a\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6105d8c1988eba430803c1f287ea90f9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\6105d8c1988eba430803c1f287ea90f9\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a46da5a2a0189d8d21c50bc70a18c794\transformed\firebase-components-17.1.5\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a46da5a2a0189d8d21c50bc70a18c794\transformed\firebase-components-17.1.5\AndroidManifest.xml:18:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4f3a8a5124dfb6e2e2aa773acfec57a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c4f3a8a5124dfb6e2e2aa773acfec57a\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4a33f894eb2ba7fae0aff71d7a944fcd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4a33f894eb2ba7fae0aff71d7a944fcd\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\54be28706ac28fd737907badea40065e\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\54be28706ac28fd737907badea40065e\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e36c0e2523917d1c2e03e9b1401745ea\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e36c0e2523917d1c2e03e9b1401745ea\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1c7ce974cde2e8ca1fb77fc23e30a1b3\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\1c7ce974cde2e8ca1fb77fc23e30a1b3\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e777388daa349d39be6db21eefa04933\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\e777388daa349d39be6db21eefa04933\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:23:9-61
+	android:targetSdkVersion
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Loy Qun Jie\AndroidStudioProjects\gosama (2)\gosama\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\eef675f859fb0540c4c2c9e94dde1898\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:20:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\37e4787b7327f427d017b3e4716abb65\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\37e4787b7327f427d017b3e4716abb65\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:26:22-76
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:53:13-63:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:26:9-35:19
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:30:9-38:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:68:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:67:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.1.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\881b21746a069a4a3c9779557332f11a\transformed\firebase-auth-22.1.0\AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.7.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a91996ad1d0ef33a9770aa22ece0483f\transformed\firebase-firestore-24.7.0\AndroidManifest.xml:20:17-111
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.playintegrity.FirebaseAppCheckPlayIntegrityRegistrar
+ADDED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck-playintegrity:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a6a223f81f0582841fc5a06db4308688\transformed\firebase-appcheck-playintegrity-17.0.1\AndroidManifest.xml:28:17-144
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.debug.FirebaseAppCheckDebugRegistrar
+ADDED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck-debug:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\94731613aed89fcd77772e1323c594ad\transformed\firebase-appcheck-debug-17.0.1\AndroidManifest.xml:28:17-128
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.6.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a75e1028b119ddeb1e63a5c8afb31902\transformed\play-services-auth-20.6.0\AndroidManifest.xml:34:13-89
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:11:22-73
+activity#com.google.android.libraries.places.widget.AutocompleteActivity
+ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:15:9-21:20
+	android:label
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:18:13-62
+	android:windowSoftInputMode
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:20:13-55
+	android:exported
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:17:13-37
+	android:theme
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:19:13-61
+	android:name
+		ADDED from [com.google.android.libraries.places:places:3.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\bd6e97dac649632adfe18373b16e2d77\transformed\places-3.4.0\AndroidManifest.xml:16:13-91
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\d62f5099b15e854476f9879b2419c7f0\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+meta-data#com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar
+ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:30:17-120
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\af1f9cdf66ad67ee2fc5a402ab5d8f0e\transformed\firebase-database-20.3.0\AndroidManifest.xml:33:17-109
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.0.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5a2871c83ffc843c2d61194267da7121\transformed\firebase-appcheck-17.0.1\AndroidManifest.xml:28:17-117
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\ec89b730f825cce4127b6980b043ba24\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\9cddc2883db707331f2b981811b7cd01\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\09075ad85b300eaee39825fb3fa93939\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a77c3a84f54f0bfc62debb85a38b00f7\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\0705eecd736bc374b58971073e3d1f9a\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\c0754633ce9b06684481477f6da5666c\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b2ec518c91ad53a04167dcce2a62a7d8\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b5bf8223591105b8ef10328e62c35309\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\16c109534e4a2d762eab81eb1b1c8685\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\7387f2c5e5cdda1ed53ed04eb9d54417\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\63f6e8f179456e7cfc1bc2bf828eeeab\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+permission#com.example.gosama.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.gosama.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\2d22a9e3f4a219765ce2d85ffd398a8e\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\4871a58695344597c0277d1cba4639cf\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\b23ebc687df7a2d2639e36371d45a073\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:26:9-32:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:34:9-36:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:27:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:29:13-31:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:31:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\a96de36baaef3c0cd040e39284f73c9e\transformed\transport-backend-cct-3.2.0\AndroidManifest.xml:30:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:24:9-28:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:26:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:27:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:25:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.2.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\58402b94847ecccecb3f74f29914091b\transformed\transport-runtime-3.2.0\AndroidManifest.xml:31:13-132
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Loy Qun Jie\.gradle\caches\8.11.1\transforms\5fba999805a3b2364697a02528316a09\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
